@@ -1,0 +1,23 @@
+CREATE TABLE Icecreams(ID INTEGER PRIMARY KEY, FLAVOR TEXT, AISLE INTEGER, PRICE INTEGER);
+
+INSERT INTO icecreams VALUES (1, "Vanilla", 1, 6);
+INSERT INTO icecreams VALUES (2, "Chocolate", 1, 6);
+INSERT INTO icecreams VALUES (3, "Rockey road", 2, 6);
+INSERT INTO icecreams VALUES (4, "Grapenut", 2, 6);
+INSERT INTO icecreams VALUES (5, "Cotton Candy", 3, 6);
+INSERT INTO icecreams VALUES (6, "Coffee oreo", 3, 6);
+INSERT INTO icecreams VALUES (7, "Banana chocolate chunk", 3, 6);
+INSERT INTO icecreams VALUES (8, "Cherry vanilla", 4, 6);
+INSERT INTO icecreams VALUES (9, "Brownie chocolate chunk", 4, 6);
+INSERT INTO icecreams VALUES (10, "M&M", 5, 6);
+INSERT INTO icecreams VALUES (11, "Funfettti", 5, 6);
+INSERT INTO icecreams VALUES (12, "Coffee", 6, 6);
+INSERT INTO icecreams VALUES (13, "Dairy free chocolate", 7, 6);
+INSERT INTO icecreams VALUES (14, "Dairy free vanilla", 7, 6);
+INSERT INTO icecreams VALUES (15, "Dairy free coffee", 7, 6);
+
+-- display the database ordered by aisle: 
+SELECT * FROM icecreams ORDER BY AISLE; 
+
+-- display the sum of the funds made after selling all items
+SELECT sum(PRICE) FROM icecreams; 
